@@ -1,0 +1,22 @@
+{
+    "name": "joshluongo/phpip",
+    "description": "phpip is a tool that mimicks how No-IP works and talks to Cloudflare.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/Helpers/LaravelHelpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Josh Luongo",
+            "email": "josh@luongo.com.au"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}

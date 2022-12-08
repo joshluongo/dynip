@@ -1,0 +1,14 @@
+{
+  "": {
+    "auth": {
+      "email": "",
+      "key": ""
+    },
+    "url_key": "",
+    "record": {
+      "name": "",
+      "domain_id": "",
+      "zone_id": ""
+    }
+  }
+}
