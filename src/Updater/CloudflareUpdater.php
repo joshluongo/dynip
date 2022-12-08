@@ -76,7 +76,7 @@ class CloudflareUpdater {
         try {
             $client = new \GuzzleHttp\Client();
             $res = $client->request(
-                'PUT',
+                'PATCH',
                 sprintf('https://api.cloudflare.com/client/v4/zones/%s/dns_records/%s', $body->record->domain_id, $body->record->zone_id), [
                     'headers' => [
                         "X-Auth-Email" => $body->auth->email,
