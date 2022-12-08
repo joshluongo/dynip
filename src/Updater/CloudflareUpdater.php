@@ -80,7 +80,7 @@ class CloudflareUpdater {
                 sprintf('https://api.cloudflare.com/client/v4/zones/%s/dns_records/%s', $body->record->domain_id, $body->record->zone_id), [
                     'headers' => [
                         "X-Auth-Email" => $body->auth->email,
-                        "X-Auth-Key" => $body->auth->key,
+                        "Authorization" => "Bearer ".$body->auth->key,
                     ],
                     'json' => [
                         "type" => "A",

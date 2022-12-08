@@ -10,10 +10,10 @@ use App\Updater\CloudflareUpdater;
 header('Content-Type: text/plain');
 
 // Get the path data.
-$path = $_SERVER["PATH_INFO"];
+$uri = $_SERVER["REQUEST_URI"];
 
 // We only support "/update"
-if ($path != "/update") {
+if (!str_starts_with($uri, "/update")) {
     echo "not found";
     http_response_code(404);
     exit(1);
